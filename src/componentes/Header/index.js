@@ -1,15 +1,22 @@
-import './estilos.css'
 import Logo from '../Logo'
 import OpcoesHeader from '../OpcoesHeader';
 import IconesHeader from '../Icones'
+import styled from 'styled-components';
+
+const HeaderContainer = styled.div`
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+`
 
 function Header () {
     return (
-        <header className="App-header">
+        <HeaderContainer>
             <Logo/>
             <OpcoesHeader/>
             <IconesHeader/>       
-        </header>
+        </HeaderContainer>
     )
 }
 
